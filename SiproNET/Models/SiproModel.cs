@@ -1,4 +1,4 @@
-namespace GeneradorPocos.Modelos
+namespace SiproNET.Models
 {
     using System;
     using System.Data.Entity;
