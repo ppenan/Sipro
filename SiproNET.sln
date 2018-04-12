@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiproNET", "SiproNET\SiproNET.csproj", "{54426A00-7051-4C58-97ED-12A22F016475}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneradorPocos", "GeneradorPocos\GeneradorPocos.csproj", "{B92F91B7-24BD-4000-A251-7B031638287F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{54426A00-7051-4C58-97ED-12A22F016475}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54426A00-7051-4C58-97ED-12A22F016475}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54426A00-7051-4C58-97ED-12A22F016475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B92F91B7-24BD-4000-A251-7B031638287F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B92F91B7-24BD-4000-A251-7B031638287F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B92F91B7-24BD-4000-A251-7B031638287F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B92F91B7-24BD-4000-A251-7B031638287F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

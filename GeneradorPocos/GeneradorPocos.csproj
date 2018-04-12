@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B92F91B7-24BD-4000-A251-7B031638287F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GeneradorPocos</RootNamespace>
+    <AssemblyName>GeneradorPocos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.10\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.10\Assemblies\v4.5\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Modelos\actividad.cs" />
+    <Compile Include="Modelos\actividad_propiedad.cs" />
+    <Compile Include="Modelos\actividad_propiedad_valor.cs" />
+    <Compile Include="Modelos\actividad_tipo.cs" />
+    <Compile Include="Modelos\actividad_usuario.cs" />
+    <Compile Include="Modelos\acumulacion_costo.cs" />
+    <Compile Include="Modelos\asignacion_raci.cs" />
+    <Compile Include="Modelos\atipo_propiedad.cs" />
+    <Compile Include="Modelos\autorizacion_tipo.cs" />
+    <Compile Include="Modelos\categoria_adquisicion.cs" />
+    <Compile Include="Modelos\colaborador.cs" />
+    <Compile Include="Modelos\componente.cs" />
+    <Compile Include="Modelos\componente_propiedad.cs" />
+    <Compile Include="Modelos\componente_propiedad_valor.cs" />
+    <Compile Include="Modelos\componente_sigade.cs" />
+    <Compile Include="Modelos\componente_tipo.cs" />
+    <Compile Include="Modelos\componente_usuario.cs" />
+    <Compile Include="Modelos\cooperante.cs" />
+    <Compile Include="Modelos\ctipo_propiedad.cs" />
+    <Compile Include="Modelos\dato_tipo.cs" />
+    <Compile Include="Modelos\desembolso.cs" />
+    <Compile Include="Modelos\desembolso_tipo.cs" />
+    <Compile Include="Modelos\documento.cs" />
+    <Compile Include="Modelos\ejecucion_estado.cs" />
+    <Compile Include="Modelos\entidad.cs" />
+    <Compile Include="Modelos\estado.cs" />
+    <Compile Include="Modelos\estado_informe.cs" />
+    <Compile Include="Modelos\estado_tabla.cs" />
+    <Compile Include="Modelos\etiqueta.cs" />
+    <Compile Include="Modelos\formulario.cs" />
+    <Compile Include="Modelos\formulario_item.cs" />
+    <Compile Include="Modelos\formulario_item_opcion.cs" />
+    <Compile Include="Modelos\formulario_item_tipo.cs" />
+    <Compile Include="Modelos\formulario_item_valor.cs" />
+    <Compile Include="Modelos\formulario_tipo.cs" />
+    <Compile Include="Modelos\hito.cs" />
+    <Compile Include="Modelos\hito_resultado.cs" />
+    <Compile Include="Modelos\hito_tipo.cs" />
+    <Compile Include="Modelos\informe_presupuesto.cs" />
+    <Compile Include="Modelos\interes_tipo.cs" />
+    <Compile Include="Modelos\linea_base.cs" />
+    <Compile Include="Modelos\meta.cs" />
+    <Compile Include="Modelos\meta_avance.cs" />
+    <Compile Include="Modelos\meta_planificado.cs" />
+    <Compile Include="Modelos\meta_tipo.cs" />
+    <Compile Include="Modelos\meta_unidad_medida.cs" />
+    <Compile Include="Modelos\objeto_formulario.cs" />
+    <Compile Include="Modelos\objeto_prestamo.cs" />
+    <Compile Include="Modelos\objeto_recurso.cs" />
+    <Compile Include="Modelos\objeto_riesgo.cs" />
+    <Compile Include="Modelos\pago_planificado.cs" />
+    <Compile Include="Modelos\pep_detalle.cs" />
+    <Compile Include="Modelos\permiso.cs" />
+    <Compile Include="Modelos\plan_adquisicion.cs" />
+    <Compile Include="Modelos\plan_adquisicion_pago.cs" />
+    <Compile Include="Modelos\prestamo.cs" />
+    <Compile Include="Modelos\prestamo_tipo.cs" />
+    <Compile Include="Modelos\prestamo_tipo_prestamo.cs" />
+    <Compile Include="Modelos\prestamo_usuario.cs" />
+    <Compile Include="Modelos\prodtipo_propiedad.cs" />
+    <Compile Include="Modelos\producto.cs" />
+    <Compile Include="Modelos\producto_propiedad.cs" />
+    <Compile Include="Modelos\producto_propiedad_valor.cs" />
+    <Compile Include="Modelos\producto_tipo.cs" />
+    <Compile Include="Modelos\producto_usuario.cs" />
+    <Compile Include="Modelos\programa.cs" />
+    <Compile Include="Modelos\programa_propiedad.cs" />
+    <Compile Include="Modelos\programa_propiedad_valor.cs" />
+    <Compile Include="Modelos\programa_proyecto.cs" />
+    <Compile Include="Modelos\programa_tipo.cs" />
+    <Compile Include="Modelos\progtipo_propiedad.cs" />
+    <Compile Include="Modelos\proyecto.cs" />
+    <Compile Include="Modelos\proyecto_impacto.cs" />
+    <Compile Include="Modelos\proyecto_miembro.cs" />
+    <Compile Include="Modelos\proyecto_propiedad.cs" />
+    <Compile Include="Modelos\proyecto_propiedad_valor.cs" />
+    <Compile Include="Modelos\proyecto_rol_colaborador.cs" />
+    <Compile Include="Modelos\proyecto_tipo.cs" />
+    <Compile Include="Modelos\proyecto_usuario.cs" />
+    <Compile Include="Modelos\ptipo_propiedad.cs" />
+    <Compile Include="Modelos\rectipo_propiedad.cs" />
+    <Compile Include="Modelos\recurso.cs" />
+    <Compile Include="Modelos\recurso_propiedad.cs" />
+    <Compile Include="Modelos\recurso_tipo.cs" />
+    <Compile Include="Modelos\recurso_unidad_medida.cs" />
+    <Compile Include="Modelos\riesgo.cs" />
+    <Compile Include="Modelos\riesgo_propiedad.cs" />
+    <Compile Include="Modelos\riesgo_propiedad_valor.cs" />
+    <Compile Include="Modelos\riesgo_tipo.cs" />
+    <Compile Include="Modelos\rol.cs" />
+    <Compile Include="Modelos\rol_permiso.cs" />
+    <Compile Include="Modelos\rol_unidad_ejecutora.cs" />
+    <Compile Include="Modelos\rol_usuario_proyecto.cs" />
+    <Compile Include="Modelos\rtipo_propiedad.cs" />
+    <Compile Include="Modelos\sctipo_propiedad.cs" />
+    <Compile Include="Modelos\SiproModel.cs" />
+    <Compile Include="Modelos\subcomponente.cs" />
+    <Compile Include="Modelos\subcomponente_propiedad.cs" />
+    <Compile Include="Modelos\subcomponente_propiedad_valor.cs" />
+    <Compile Include="Modelos\subcomponente_tipo.cs" />
+    <Compile Include="Modelos\subcomponente_usuario.cs" />
+    <Compile Include="Modelos\subprodtipo_propiedad.cs" />
+    <Compile Include="Modelos\subproducto.cs" />
+    <Compile Include="Modelos\subproducto_propiedad.cs" />
+    <Compile Include="Modelos\subproducto_propiedad_valor.cs" />
+    <Compile Include="Modelos\subproducto_tipo.cs" />
+    <Compile Include="Modelos\subproducto_usuario.cs" />
+    <Compile Include="Modelos\tipo_adquisicion.cs" />
+    <Compile Include="Modelos\tipo_moneda.cs" />
+    <Compile Include="Modelos\unidad_ejecutora.cs" />
+    <Compile Include="Modelos\unidad_medida.cs" />
+    <Compile Include="Modelos\usuario.cs" />
+    <Compile Include="Modelos\usuario_permiso.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
